@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: auto;
+        }
+        td{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            border: none;
+            outline: none;
+            /* border: 2px solid black;  */
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- <div class="clac"> -->
+        
+            <table>
+                
+                <tr>
+                    <td colspan="4"></td>
+                    <!-- <td></td>
+                    <td></td>
+                    <td></td> -->
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <button onclick="num(1)">1</button>
+            <button onclick="num(2)">2</button>
+            <button onclick="num(3)">+</button>
+            <p id="showNum"></p>
+        <!-- </div> -->
+        <input id="down" onkeydown="daniel()" type="text">
+        <input id="up" onkeyup="daniel()" type="text">
+    </main>
+</body>
+</html>
+<script>
+    function daniel() {
+            (document.getElementById("down").value).innerHTML;
+            console.log("I am typing");
+        }
+        function num(figure) {
+                document.getElementById("showNum").innerHTML = figure
+            }
+</script>

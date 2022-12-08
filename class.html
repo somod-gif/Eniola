@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .hide{
+            display: none;
+        }
+        main:focus-within .hide{
+            display: block;
+        } */
+    </style>
+</head>
+
+<body>
+    <main>
+        <input type="text">
+        <h1>Introduction</h1>
+        <!-- <input type="text"> -->
+        <input value="250" type="text" name="" id="inp1">
+        <input value="100" type="text" name="" id="inp2"> <br>
+        <br>
+        <input type="text" id="emma" onkeyup="retype()"> <br>
+        
+        <div id="show"></div>
+        <button onclick="dosomething(5, 10 )">Click me</button>
+        <input onkeydown="daniel()" type="text">
+        <input onkeyup="dan()" type="text">
+        <input onkeypress="dan()" type="text">
+        <button onmouseenter="enter()">Mouse events</button>
+        <button onclick="num(1)">1</button>
+        <button onclick="num(2)">2</button>
+        <button onclick="num(3)">3</button>
+        <p id="showNum"></p>
+    </main>
+</body>
+
+</html>
+<script>
+    
+    let word = "Somebody have use broom";
+    let statement = "to mearsure my log";
+    console.log(word.concat(statement));
+    console.log(word + statement)
+
+    function dosomething(){
+        console.log(word);
+        // saysomething()
+    }
+    function saysomething(){
+        alerts("hello world");
+    }
+    function dan(){
+        alert("")
+    }
+    function enter(){
+        console.log("mouse just moved")
+    }
+    function num(figure){
+        document.getElementById("showNum").innerHTML = figure
+    }
+
+
+
+    let emma = document.getElementById('emma')
+    let show = document.getElementById('show')
+    function retype() {
+    show.innerHTML = emma.value
+    }
+    retype()
+    // 
+
+    // STRING METHODS
+    let sentence = "Go to market and buy bata odun"
+    console.log(sentence);
+    console.log(sentence.replace("market", "mall"));
+    let inp1 = document.getElementById("inp1").value;
+    let inp2 = document.getElementById("inp2").value;
+    // alert(Number(inp1) + Number(inp2))
+    let name = "Eniola"
+    console.log(name);
+    // alert(name)
+    // DATA TYPES
+    let named = "Julius"
+    console.log("This data types is a string", named);
+    let credit = 60;
+    let debit = 50;
+    // console.log("This data type is number", sum);
+    console.log(credit + debit);
+    console.log(credit > debit)
+    if (debit > credit) {
+        alert("gbese dee")
+    } else {
+        alert("cashout")
+    }
+    let bank;
+    console.log(bank);
+    let errm = null
+    console.log(errm);
+    // console.log(document.getElementById(goat));
+    // console.log(document.getElementById(cow));
+    // console.log(goat + cow);
+    // alert(sum)
+    // document.getElementById("goat");
+    // function retype(){
+    //     document.getElementById("typing").innerHTML = typing.value
+    //     document.getElementById("hide").innerHTML = typing.value
+    // }
+    // retype()
+    // function show() {
+    //     if(document.getElementById("hide").style.display =="block"){
+    //         document.getElementById("hide").style.display = "none"
+    //     }else{
+    //         document.getElementById("hide").style.display ="block"
+    //     }
+    // }
+</script>
