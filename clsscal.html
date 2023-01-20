@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<style>
+    a{
+        font-size: 45px;
+        text-align: center;
+        margin: auto;
+        text-decoration: none;
+    }
+    main{
+        display: block;
+    }
+    .kkk{
+        /* height: 200px; */
+        /* border: 2px solid black; */
+    }
+</style>
+
+<body>
+    <main>
+        <input type="button" value="rhyrhre">
+        <div class="container">
+            <div class="calculator">
+                <form action="">
+                    <div class="displa">
+                        <input id="display" type="text" name="">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="display.value = '' ">
+                        <!-- <input type="button"  value="DE" onclick="display.value = display.value.tostring().slice(0 , -1)"> -->
+                        <input type="button" value="." onclick="display.value += '.' ">
+                        <input type="button" value="&divide;" onclick="display.value += '/' ">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="display.value += (7) ">
+                        <input type="button" value="8" onclick="display.value += (8) ">
+                        <input type="button" value="9" onclick="display.value += (9) ">
+                        <input type="button" value="&times;" onclick="display.value += '*' ">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="display.value += (4) ">
+                        <input type="button" value="5" onclick="display.value += (5) ">
+                        <input type="button" value="6" onclick="display.value += (6) ">
+                        <input type="button" value="&minus;" onclick="display.value += '-' ">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="display.value += (1) ">
+                        <input type="button" value="2" onclick="display.value += (2) ">
+                        <input type="button" value="3" onclick="display.value += (3) ">
+                        <input type="button" value="&plus;" onclick="display.value += '+' ">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="display.value += (00) ">
+                        <input type="button" value="0" onclick="display.value += (0) ">
+                        <input type="button" value="&equals;" onclick="display.value = eval(display.value)"
+                            class="equal">
+                        <!-- <input type="button"  value="+"> -->
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <a href="./cal.html">Click to see the second calculator</a>
+        <!-- <div class="kkk">
+            <input onkeyup="tyyp()" type="text" name="" id="eniola">
+            <div id="show"></div>
+        </div> -->
+    </main>
+</body>
+
+</html>
+<script>
+    // let eniola = document.getElementById("eniola")
+    // let screen = document.getElementById("show")
+    // function tyyp() {
+
+    //     screen.innerHTML = eniola.value
+    // }
+</script>

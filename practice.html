@@ -1,25 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="">
 </head>
+
 <body>
     <main>
-        <button onclick="num(1)">1</button>
-        <button onclick="num(2)">2</button>
-        <button onclick="num(3)">3</button>
-        <button onclick="num(4)">4</button>
-        <button onclick="num(5)">5</button>
-        <button onclick="num(6)">6</button>
-        <button onclick="num(7)">7</button>
-        <input id="showNum"></input>
+
     </main>
 </body>
+
 </html>
 <script>
-    function num(figure) {
-            document.getElementById("showNum").value += figure    }
+    // fruit = prompt('what is your favourite fruit?')
+    // console.log(fruit);
+    // food = prompt('how much was the food?')
+    // tipPercentage = prompt('tip %?') / 100
+    // tipAmount = food * tipPercentage
+    // total = food + tipAmount
+    // console.log('tip amount', tipAmount);
+    // alert(tipAmount);
+
+
+    // let weather = prompt('how is weather');
+    // if (weather == 'rainy') {
+    //     console.log('Grab your Umbrella ☔☔');
+    // } else {
+    //     console.log('Wear Your sunglasses 😎😎');
+    // }
+    // function sayMyName(name) {
+    //     console.log(name)
+    // }
+    // sayMyName('Qazi')
+    // sayMyName('Lance')
+    // function sum(a, b) {
+    //     return a + b
+    // }
+    // let result = sum(9, 10)
+    // console.log(result)
+    // function greeting(name) {
+    // greet = `hi ${name}, Nice to meet you!`
+    // console.log(greet);
+    // }
+    // greeting('Johnny Depp')
+    // function sum(a, b) {
+    // return a + b
+    // console.log(a+b);
+    // }
+    // num1 = sum(1, 2)
+    // console.log(num1);
+    // let sumArrow = (a, b) => a + b
+    // console.log(sum(10, 50))
+    // let sumArrow2 = (a, b) => a - b
+    // console.log(sumArrow2(10, 50))
+    //array
+    // let array = ['enn',
+    // 'ueued',
+    // 'fghft'
+    // ]   
+    // console.log(array);
+    // console.log(array.length);
+    // array.push('yy')
+    // console.log(array);
+    // console.log(array.indexOf('enn'));
+    // console.log(array.length);
+    // console.log(array.slice(0,3));
+    // console.log(array.push('yy'));
+    //array methods 
+    //slice
+    //push
+    //index of 
+    // length
+    //OBJECT
+    // let person = {
+    //     name:'Qazi',
+    //     shirt:'black',
+    //     phone:'33-33-77'
+    // }
+    // method of object
+    // console.log(person)
+    // access object: dot notation vs. bracket notation
+    // console.log(person.shirt);
+    // console.log(person.name);
+    // // bracket notation
+    // console.log(person['name']);
+    // console.log(person['shirt']);
+    // // assign object
+    // person.phone = '33-33-77'
+    // console.log(person.phone);
+    // const introducer = (name, shirt) => {
+    //     let person = {
+    //         name: name,
+    //         shirt:shirt
+    //     }
+    //     const intro = `Hi my name is ${person.name} and the color of my shirt is ${person.shirt}`
+    //     return intro
+    // }
+    // console.log(introducer('Enny', 'white'));
+    // // LOOP LOOP
+    // let fruits = [
+    //     'banana',
+    //     'Apple',
+    //     'Orange', 
+    //     'Pear',
+    //     'banana',
+    //     'Apple',
+    //     'Orange',
+    //     'Pear',
+    //     'banana',
+    //     'Apple',
+    //     'Orange',
+    //     '🍌',
+    // ]
+    // // outdated way of writing loop
+    // for (let i=1; i < fruits.length; i++) {
+    //     console.log(i, fruits[0]);
+
+    // }
+    // // another way of writing loop
+    // for ( let fruit of fruits) {
+    //     console.log(fruit);
+    // }
+    // // do while
+    // let i = 0;
+    // do {
+    //     console.log(fruits);
+    //     i++
+    // }
+    // while(i < fruits.length);
+    // Methods of Loop 
+    // 1 For loop
+    let numbers = [1, 2, 3, 4, 5, 6]
+    // console.log(numbers);
+    // for (let i = 0; i < numbers.length; i++) {
+    // console.log( numbers[i]);
+
+    // }
+    // 2 while loop
+    // let i = 2
+    // while (i < 5) {
+    //     i++
+    //     console.log(i);
+    // } 
+    // to perform arithmetics with loop
+    // for (const number of numbers) {
+        // console.log(number * 2);
+    // }
+    // to perform arithmetic with and get anwser in array
+    // let result = []
+    // for (const number of numbers) {
+    //     result.push(number * 2)
+    // }
+    // console.log(result)
+    /*const double = (numbers) => {
+        let result = []
+        for (const number of numbers){
+            result.push(number * 2)
+        }
+        return result
+    }
+    console.log(double([1, 2, 3, 4, 5, 6]));*/
+    // continue here
+    // const howManyLetters = () => {
+    //     const phrase = 'hey, can you go to grocery store with me?'
+
+    //     for (const letter in phrase) {
+    //         // console.log(Number(letter) +1 );
+    //     }
+    // }
+
+    // howManyLetters()
+    // back to arrow function and normal function
+    let sumArrow = (a, b) => a + b
+    // console.log(sumArrow(10, 50));
+    //or
+
+    let a = 10
+    let b = 30
+    console.log(a + b);
+    // let weather = prompt('how is weather');
+    // if (weather == 'rainy') {
+    //     console.log('Grab your Umbrella ☔☔');
+    //     alert('Grab Your umbrella ☔☔')
+    // } else {
+    //     console.log('Wear Your sunglasses 😎😎');
+    //     alert('Wear Your sunglasses 😎😎')
+    // }
+    // CONDITIONAL STATEMENT SIGNS AND THEIR MEANING
+    // '<' less than
+    // '>'	greater than
+    // '<='	less than or equal to
+    // '<='	greater than or equal to
+    // '==' equal to
+    // '!=' not equal to
+    // About if and else
+    // let age = prompt('what your age');
+
+    // if (age >= 18) {
+    //     console.log('You can sign up.');
+    //     alert('You can sign up welcome✅✅✅✳')
+    // } else {
+    //     console.log('You must be at least 18 to sign up.');
+    //     alert('you can sign up you must reach the age of 18 before you can sign up 🔞🔞🔞🔞 ')
+    // }
+    // const SumArray = (numbers) => {
+    //     let result = 0;
+    //     // for loop
+    //     for (const number of numbers) {
+    //         console.log(number);
+    //         result = result + number
+    //     }
+    //     return ( result )
+    // }
+    // const nums = [1, 2, 3, 4, 5]
+    // console.log(SumArray(nums));
+    let wordFrequency = (phrase) => {
+        let frequency = {}
+        words = phrase.split(' ')
+        for (const word of words) {
+            console.log(word)
+            if (word in frequency) {
+                frequency[word] += 1
+            } else {
+                frequency[word] =1
+            }
+        }
+        console.log(words);
+        return frequency
+    }
+    console.log(wordFrequency('lol what lol hello'));
+    
 </script>

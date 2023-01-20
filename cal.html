@@ -13,10 +13,8 @@
             width: 100%;
             height: 100vh;
             background-color: blue;
+            overflow-x: hidden;
         }
-        /* input{
-            margin-top: 20px;
-        } */
         button{
             width: 55px;
             height: 65px;
@@ -26,21 +24,18 @@
             font-size: 2rem;
         }
         .main{
-            width: 600px;
+            max-width: 600px;
             height: 300px;
             /* border: 2px solid black; */
             margin: auto;
             margin-top: 20px;
         }
         input{
-            width: 400px;
+            max-width: 400px;
             height: 40px;
         }
         .kwk{
-            margin: auto;
-            width: 300px;
-            margin-top: 30px;
-            /* border: 1px solid black; */
+            max-width: 300px;
         }
         #hh{
             font-size: 2.3rem;
@@ -49,19 +44,24 @@
     </style>
 </head>
 <body>
-    <div class="main">
-        <form action="">
-            <input id="up" class="form-control w-100 mt-3" type="number">
-            <input id="down" class="form-control w-100 mt-3" type="number">
-        </form> 
-        <div class="kwk">
+    <main>
+        <div class="main  container">
+            <form action="">
+                <input id="up" class="form-control w-100 mt-3" type="number">
+                <input id="down" class="form-control w-100 mt-3" type="number">
+            </form>
             <button onclick="plus()">+</button>
             <button onclick="minus()">-</button>
             <button onclick="divide()">/</button>
             <button onclick="multiply()">*</button>
-            <div id="hh">THE ANWSER WILL APPEAR HERE</div>
+            <div class="kwk">
+        
+                <div id="hh">THE ANWSER WILL APPEAR HERE</div>
+            </div>
+        
         </div>
-    </div>
+    </main>
+            
 </body>
 </html>
 <script>

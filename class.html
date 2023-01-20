@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <style>
         /* .hide{
             display: none;
@@ -13,14 +14,14 @@
         main:focus-within .hide{
             display: block;
         } */
+        
     </style>
 </head>
 
 <body>
     <main>
-        <input type="text">
+        <!-- <input type="text">
         <h1>Introduction</h1>
-        <!-- <input type="text"> -->
         <input value="250" type="text" name="" id="inp1">
         <input value="100" type="text" name="" id="inp2"> <br>
         <br>
@@ -35,72 +36,284 @@
         <button onclick="num(1)">1</button>
         <button onclick="num(2)">2</button>
         <button onclick="num(3)">3</button>
-        <p id="showNum"></p>
+        <p id="showNum"></p> -->
+        <!-- <p id="show"></p> -->
+        <!-- <button onclick="eniola()" type="submit">click me</button> -->
+        <!-- <input onkeypress="showvalue()" type="text" name="" id="things"> -->
+        <!-- <input onkeyup="retype()" type="text" name="" id="enny">
+       <button onclick="now()"></button>
+        <div id="show"></div> -->
+        <!-- <input id="inp1" type="text"> <br>
+        <br>
+        <input id="inp2" type="text"> <br>
+        <br>
+        <button onclick="com()" type="submit">Sign in</button> -->
+        <!-- <button onmouseenter="dosomething()">Click</button> -->
+        <!-- <h1 id="showFig"></h1>
+        <h1 id="showFigure"></h1>
+        <button onclick="increasementNum()">Increase</button>
+        <button onclick="decreasementNum()">Increase</button> -->
+        <!-- <p id="count"></p>
+        <p id="show"></p>
+        <button onclick="inc()">Increase</button>
+        <button onclick="dec()">Decrease</button> -->
+       <!-- <div> -->
+        <!-- <input id="val1" type="text">
+        <input id="val2" type="text">
+        <button onclick="count()">Count down</button>
+        <h1 id="dis"></h1> -->
+        <input id="oneinp" type="text">
+        <button onclick="adedd()" type="submit">summit</button>
+       </div>
     </main>
 </body>
 
 </html>
-<script>
+<script>   
+    let data = ["HTML","CSS","BOOTSTRAP"]
+    // data.push("JAVASCRIP")
+    console.log(data);
+    function adedd() {
+        let one = document.getElementById("oneinp").value;
+        data.push(one)
+        console.log(data);
+    }
+    // let inp1 = document.getElementById("val1");
+    // let inp2 = document.getElementById("val2");
+    // let screen = document.getElementById("dis");
+
+    // function count() {
+    //     console.log(inp1.value, inp2.value);
+    //     if (Number(inp1.value) < (inp2.value)) {
+    //         alert("invalid input")
+    //     } else{
+    //         let stop = setInterval(() => {
+    //             inp1.value--
+    //             if (Number(inp1.value) == Number(inp2.value)) {
+    //                 clearInterval(stop)
+    //                 setTimeout(() => {
+    //                     alert("Time up")
+    //                 }, 1000);
+    //             }
+    //             screen.innerHTML = inp1.value
+    //         }, 1000);
+    //     }
+    // }
+    // let figure = 10
+    // let countdown = document.getElementById('count')
+
+    // FOR DECREASEMENT
+
+    // function dec() {
+    //     if (figure > 0) {
+    //         figure--
+    //         countdown.innerHTML = figure;
+    //     } else {
+    //         alert('there is nothing left')
+    //     }
+    // }
+    // let the_fig = 0
+    // let output = document.getElementById('show')
+
+
+    // // FOR INCREASEMENT
+    // function inc() {
+    //     if (the_fig < 10) {
+    //         the_fig++
+    //         output.innerHTML = the_fig;
+    //     } else {
+    //         alert('That is enough')
+    //     }
+
+    // }
+    // let the_figure = 0
+    // let showFigure = document.getElementById("showFigure")
+    // function increasementNum() {
+    //     console.log(the_figure <= 8);
+    //     if(the_figure < 8){
+    //         the_figure++
+    //         showFigure.innerHTML = the_figure;
+    //     }else{
+    //         alert("out of stock")
+    //     }
+    // }
+    // let today = new Date()
+    // console.log(today);
+    // console.log(today.getDate());
+    // console.log(today.getHours());
+    // setTimeout(() => {
+    //     console.log("this will appear after 6sec");
+    // }, 6000);
+    // setInterval(() => {
+    //     console.log("This will appear every 2sec");
+    // }, 5000);
+    // let figure = 7
+    // let saved = setInterval(() => {
+    //     figure--
+    //     showFigure.innerHTML = figure
+    //     console.log("every 2sec");
+    //     if (figure == 0) {
+    //         clearInterval(saved)
+    //     }
+    // }, 2000);
+    // function dosomething(){
+    //     console.log(3+5);
+    //     alert("3+5")
+    // }
+    // let age = 13
+    // if (age > 12) {
+    //     alert("You can drive")
+    // } else{
+    //     alert("Sit down at home")
+    // }
+    // age > 12 ? (alert("You can drive")) : (alert("sit down at home"))
+    // let enn = prompt("what is your name")
+    // function com() {
+    //     let inp1 = document.getElementById("inp1").value;
+    //     let inp2 = document.getElementById("inp2").value;
+    //     if (inp1 == inp2) {
+    //         // console.log("password correct");
+    //         alert("password correct");
+
+    //     }else {
+    //         // console.log("password doesn't match");
+    //         alert("password doesn't match");
+    //     }
+    // }
+
+    // console.log(5 % 2);
+    // if("Daniel" == "daniel") {
+        // console.log("correct");
+        // alert("correct")
+    // } else{
+        // console.log("incorrect");
+        // alert("incorrect")
+    // }
+    // retype()
+    // let myinput = document.getElementById("things")
+    // console.log(myinput.value);
+    // function showvalue() {
+    //     console.log(myinput.value);
     
-    let word = "Somebody have use broom";
-    let statement = "to mearsure my log";
-    console.log(word.concat(statement));
-    console.log(word + statement)
+    // const show = document.getElementById("show")
+     
 
-    function dosomething(){
-        console.log(word);
-        // saysomething()
-    }
-    function saysomething(){
-        alerts("hello world");
-    }
-    function dan(){
-        alert("")
-    }
-    function enter(){
-        console.log("mouse just moved")
-    }
-    function num(figure){
-        document.getElementById("showNum").innerHTML = figure
-    }
+    // function now(){
+        
+
+    // }
+
+    // console.log(fis);
 
 
+    // }
+    //arrray
+    // let multiple = ['Daniel', 23, true,{class: "HTML"}]
+    // console.log(multiple);
+    // let num = [1,2,3,4,5,6]
+    // console.log(num);
+    // let str = ['strings1', 'strings2','strings3']
+    // console.log(str);
+    // let obj = [{name:'dan'},{name:'scope'},{name:'dev'}]
+    // console.log(obj);
+    // let methods = "This is a new javascript class"
+    // console.log(methods.includes('new'));
+    // let meth = methods.replace('new','old')
+    // console.log(meth);
+    // console.log(methods.startsWith('this'));
+    // console.log(methods.endsWith('#'));
+    // console.log(methods.toLocaleUpperCase());
+    // function eniola() {
+    //     document.body.style.backgroundColor = 'green'
+    //     console.log(num1 + num2);
+    //     alert(num1 + num2)
+    // }
+    // let num1 = 40
+    // let num2 = 60
+    // STRINGS METHOD
+    // CONCAT()
+    // SLICE (EXTRACT A PART OF A STRINGS)
+    //START WITH(CHECK FIRST VALUE OF A STRING)
+    //ENDSWITH(CHECK END VALUE OF A STRING)
 
-    let emma = document.getElementById('emma')
-    let show = document.getElementById('show')
-    function retype() {
-    show.innerHTML = emma.value
-    }
-    retype()
+
+    // ARRAY
+    // let myarray = ["Daniel","scope", "class rep", "coder"]
+    // console.log(myarray);
+    // console.log(myarray[0]);
+    // console.log(myarray.length);
+    // console.log(myarray.push("absolute"));
+    // console.log(myarray);
+    // myarray.unshift("tobi")
+    // console.log(myarray);
+    // myarray.shift("tobi")
+    // console.log(myarray);
+    // myarray.pop("")
+    // console.log(myarray);
+    // console.log(-3<0.001);
+    // let bottle;
+    // console.log(bottle);
+    // document.getElementById('show').innerHTML = 5+6
+    
+    // let word = "Somebody have use broom";
+    // let statement = "to mearsure my log";
+    // console.log(word.concat(statement));
+    // console.log(word + statement)
+
+    // function dosomething(){
+    //     console.log(word);
+    //     // saysomething()
+    // }
+    // function saysomething(){
+    //     alerts("hello world");
+    // }
+    // function dan(){
+    //     alert("")
+    // }
+    // function enter(){
+    //     console.log("mouse just moved")
+    // }
+    // function num(figure){
+    //     document.getElementById("showNum").innerHTML = figure
+    // }
+
+
+
+    // let emma = document.getElementById('emma')
+    // let show = document.getElementById('show')
+    // function retype() {
+    // show.innerHTML = emma.value
+    // }
+    // retype()
     // 
 
     // STRING METHODS
-    let sentence = "Go to market and buy bata odun"
-    console.log(sentence);
-    console.log(sentence.replace("market", "mall"));
-    let inp1 = document.getElementById("inp1").value;
-    let inp2 = document.getElementById("inp2").value;
+    // let sentence = "Go to market and buy bata odun"
+    // console.log(sentence);
+    // console.log(sentence.replace("market", "mall"));
+    // let inp1 = document.getElementById("inp1")
+    // let inp2 = document.getElementById("inp2").value;
     // alert(Number(inp1) + Number(inp2))
-    let name = "Eniola"
-    console.log(name);
+    // let name = "Eniola"
+    // console.log(name);
     // alert(name)
     // DATA TYPES
-    let named = "Julius"
-    console.log("This data types is a string", named);
-    let credit = 60;
-    let debit = 50;
+    // let named = "Julius"
+    // console.log("This data types is a string", named);
+    // let credit = 60;
+    // let debit = 50;
     // console.log("This data type is number", sum);
-    console.log(credit + debit);
-    console.log(credit > debit)
-    if (debit > credit) {
-        alert("gbese dee")
-    } else {
-        alert("cashout")
-    }
-    let bank;
-    console.log(bank);
-    let errm = null
-    console.log(errm);
+    // console.log(credit + debit);
+    // console.log(credit > debit)
+    // if (debit > credit) {
+    //     alert("gbese dee")
+    // } else {
+    //     alert("cashout")
+    // }
+    // let bank;
+    // console.log(bank);
+    // let errm = null
+    // console.log(errm);
     // console.log(document.getElementById(goat));
     // console.log(document.getElementById(cow));
     // console.log(goat + cow);

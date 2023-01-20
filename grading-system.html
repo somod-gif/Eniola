@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
+</head>
+<style>
+
+</style>
+<body>
+    <main>
+        <div class="container ">
+            <input type="number" name="" id="score" class="">
+            <button onclick="grade()" type="submit">Grade</button>
+        </div>
+    </main>
+</body>
+</html>
+<script>
+    
+    function grade() {
+        let score = document.getElementById("score").value;
+        if (score < 30) {
+            alert("F");
+        }
+        else if(score < 50) {
+            alert("D")
+        }
+        else if (score < 65) {
+            alert("C")
+        }
+        else if (score < 80) {
+            alert("B")
+        }
+        else if (score > 80 < 100) {
+            alert("A")
+        }
+        
+        
+    }
+      // '<' less than
+    // '>'	greater than
+</script>

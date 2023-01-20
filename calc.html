@@ -54,17 +54,17 @@
             </table>
             <button onclick="num(1)">1</button>
             <button onclick="num(2)">2</button>
-            <button onclick="num(3)">+</button>
+            <button onclick="num(+)">+</button>
             <p id="showNum"></p>
         <!-- </div> -->
-        <input id="down" onkeydown="daniel()" type="text">
+        <!-- <input id="down" onkeydown="daniel()" type="text"> -->
         <input id="up" onkeyup="daniel()" type="text">
     </main>
 </body>
 </html>
 <script>
     function daniel() {
-            (document.getElementById("down").value).innerHTML;
+            (document.getElementById("daniel").value).innerHTML;
             console.log("I am typing");
         }
         function num(figure) {

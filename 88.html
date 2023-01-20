@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.min.css">
+</head>
+<style>
+    main{
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        margin-top: 50px;
+        background-image: linear-gradient(yellow,green);
+    }
+    
+    button{
+        height: 50px;
+        width: 140px;
+        border: none;
+        
+    }
+</style>
+<body>
+    <main class="">
+        <br>
+        <input id="sec" type="text"> <br>
+        <br>
+        <input id="sac" type="text">
+        <br>
+        <h1 id="show"></h1>
+        <br>
+        <button onclick="car()">Count down </button>
+    </main>
+</body>
+<script>
+    let inp1 = document.getElementById('sec')
+    let inp2 = document.getElementById('sac')
+    let show = document.getElementById('show')
+    let timeout = null
+    let count = 0
+
+    function baz() {
+        let cos = count--
+        let play = Number(inp1.value) + Number(cos)
+        show.innerHTML = ` ${play} : ${inp2.value}`
+        if (play == inp2.value) {
+            clearTimeout(timeout)
+        }
+    }
+    function car() {
+        timeout = setInterval(baz, 1000);
+    }
+</script>
+
+</html>

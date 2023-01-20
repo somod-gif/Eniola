@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- <h1>setInterval() - Javascript - decode</h1>
+        <h2 id="timer-text"></h2>
+        <button id="btn-start">Start Timer </button> -->
+        <!-- <p id="count"></p>
+        <p id="show"></p>
+        <button onclick="inc()">Increase</button>
+        <button onclick="dec()">Decrease</button> -->
+        <input type="text" id="inp1"> <br>
+        <br>
+        <input type="text" id="inp2"> <br>
+        <br>
+        <button onclick="countdown()">Start</button>
+        <h1 id="showfigure"></h1>
+    </main>
+</body>
+</html>
+<script>
+    let myinput1 = document.getElementById("inp1")
+    let myinput2 = document.getElementById("inp2")
+    let showFigure = document.getElementById("showfigure")
+    
+    function countdown() {
+        if (myinput1.value == myinput2.value) {
+            alert('invalid operation')
+        } else if (myinput1.value < myinput2.value) {
+            alert('invalid operation')
+        } else if (myinput1.value > myinput2.value) {
+            let me = setInterval(() => {
+                myinput1.value--
+
+                showFigure.innerHTML = myinput1.value
+                let you = myinput1.value
+                if (you == myinput1.value) {
+                    clearInterval(me)
+                }
+            }, 1000);
+        }
+    }
+    
+
+
+    // let timerText = document.getElementById("timer-text");
+    // let btnStart = document.getElementById("btn-start");
+
+    // let count = 0;
+
+    // btnStart.addEventListener("click", function () {
+    //     setInterval(function () {
+    //         count += 1;
+    //         timerText.textContent = count;
+    //     }, 1000)
+    // })
+
+    // let figure = 10
+    //     let countdown = document.getElementById('count')
+
+    //     // FOR DECREASEMENT
+
+    //     function dec() {
+
+    //         if (figure > 0) {
+    //             figure--
+    //             countdown.innerHTML = figure;
+    //         } else {
+    //             alert('there is nothing left')
+    //         }
+    //     }
+
+    //     let the_fig = 0
+    //     let output = document.getElementById('show')
+
+
+    //     // FOR INCREASEMENT
+    //     function inc() {
+    //         if (the_fig < 10) {
+    //             the_fig++
+    //             output.innerHTML = the_fig;
+    //         } else {
+    //             alert('That is enough')
+    //         }
+
+    //     }
+</script>

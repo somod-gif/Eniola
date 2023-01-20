@@ -5,24 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <script src="./script.js"></script> -->
 </head>
-<style>
-    body{
-        font-family: sans-serif;
-    }
-</style>
 <body>
-    <h1>JAVASCRIPT</h1>
+    <input onkeyup="tyyp()" type="text" name="" id="eniola">
     <div id="show"></div>
-    <input type="text" name="" id="">
 </body>
 </html>
 <script>
-    let emma = document.getElementById('emma')
-    let show = document.getElementById('show')
-    function retype() {
-        show.innerHTML = emma.value
+    let eniola = document.getElementById("eniola")
+    let screen = document.getElementById("show")
+    function tyyp() {
+        
+        screen.innerHTML = eniola.value
     }
-    retype()
+    // tyyp()
 </script>
